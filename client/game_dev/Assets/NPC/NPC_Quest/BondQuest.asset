@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd225368c1dfbb44ca1ed299e3bbb513, type: 3}
+  m_Name: BondQuest
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questName: BondQuiz
+  description: "\uCC44\uAD8C\uC744 \uD574\uAE08\uD558\uB824\uBA74 \uC774 \uD018\uC2A4\uD2B8\uB97C
+    \uD074\uB9AC\uC5B4\uD558\uC138"
+  type: 0
+  questions:
+  - {fileID: 11400000, guid: 4a11e8681ce019d46a23720b8f1e0163, type: 2}
+  unlockFeature: 4
+  prerequisiteQuest: {fileID: 11400000, guid: 3c23b50174fb59c499983c7dd1da565d, type: 2}
+  isAccepted: 0
+  isCompleted: 1
+  rewardMoney: 0

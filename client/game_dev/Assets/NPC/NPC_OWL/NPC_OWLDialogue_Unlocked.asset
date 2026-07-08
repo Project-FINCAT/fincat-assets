@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acae5d2b8ceaea846b81384f77811495, type: 3}
+  m_Name: NPC_OWLDialogue_Unlocked
+  m_EditorClassIdentifier: Assembly-CSharp::NpcDialogue
+  npcName: NPC_OWL
+  npcPortrait: {fileID: -7527145504033472756, guid: 1bac4752ceae7394686f219f09c308ae, type: 3}
+  dialogueLines:
+  - "\uBB34\uC5C7\uC744 \uACF5\uBD80\uD558\uACE0 \uC2F6\uC73C\uC2E0\uAC00\uC694?"
+  - "\uADF8\uB798\uC694. \uC5B8\uC81C\uB4E0 \uD3B8\uD560\uB54C \uCC3E\uC544\uC624\uC138\uC694."
+  autoProgressLines: 01
+  endDialogueLines: 000101
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: 515d5a183d7050b46a477ddcc208107d, type: 3}
+  voicePitch: 1
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - "\uACF5\uBD80\uD558\uAE30"
+    - "\uADF8\uB9CC\uB450\uAE30"
+    nextDialogueIndexs: 9cffffff01000000
+  useAI: 1
+  aiPrompt: '"You are a wise NPC in a fantasy world. Speak calmly and wisely."'

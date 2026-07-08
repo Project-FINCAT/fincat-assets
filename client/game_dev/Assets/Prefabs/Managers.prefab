@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8440027447484562508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504630158492463207}
+  - component: {fileID: 7366125221304259595}
+  - component: {fileID: 256944104490919440}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &504630158492463207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440027447484562508}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.25313, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7366125221304259595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440027447484562508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226aede0a8e89bf4daba9dee472208be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FinanceManager
+  myBonds: []
+  playerMoney: 50000
+  hasISAAccount: 0
+  taxFreeLimit: 3000000
+  tradingTaxRate: 0.002
+  capitalGainsTax: 0.22
+  isStockQuestCompleted: 1
+--- !u!114 &256944104490919440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8440027447484562508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9192f2c94b0f843ba16874234cf25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StockManager
+  stocks:
+  - {fileID: 11400000, guid: b883686a79eaf75449bb39f26c6dca1a, type: 2}
+  - {fileID: 11400000, guid: 5f2f22e8f6ed6ab4589c2a4b16f5f32f, type: 2}
+  - {fileID: 11400000, guid: b14bca02ecc6bc04398d0c40ee3ab102, type: 2}
+  - {fileID: 11400000, guid: c5bf4187b93a6104a8c7f114c8b27b59, type: 2}
+  - {fileID: 11400000, guid: 48e2a3be36f06c24da8bde76a87a0d75, type: 2}
+  - {fileID: 11400000, guid: 2e9beb48d05ab7a409e346bb6fcc80fe, type: 2}
+  - {fileID: 11400000, guid: 80b1d18675b64af418cfe1249254c02e, type: 2}
+  - {fileID: 11400000, guid: 24732ac0215a51744affb8704b214cee, type: 2}
+  - {fileID: 11400000, guid: c9527d7c3aa184642ae57080774e59ca, type: 2}
+  - {fileID: 11400000, guid: 36f98a4f200d4684dad111b2eec0c435, type: 2}
+  newsDatabase: {fileID: 11400000, guid: 8211bd8e496cf0640b13073cdfa2e976, type: 2}

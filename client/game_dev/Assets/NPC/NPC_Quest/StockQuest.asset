@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd225368c1dfbb44ca1ed299e3bbb513, type: 3}
+  m_Name: StockQuest
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questName: StockQuiz
+  description: "\uC8FC\uC2DD\uC744 \uD574\uAE08\uD558\uB824\uBA74 \uD22C\uC790\uC131\uD5A5
+    \uD14C\uC2A4\uD2B8\uB97C \uC644\uB8CC\uD558\uC138\uC694."
+  type: 1
+  questions:
+  - {fileID: 11400000, guid: 10251259a74434d418004ee3c4b0c2ec, type: 2}
+  - {fileID: 11400000, guid: 370149e1cc3ba5f41ad63d2272ee18f4, type: 2}
+  - {fileID: 11400000, guid: edec3d9d231bc024b9b4e8592c58a781, type: 2}
+  - {fileID: 11400000, guid: c50d4414676ad734b878902a04573387, type: 2}
+  - {fileID: 11400000, guid: d3e20dcb540d20e44bceea39989077a7, type: 2}
+  unlockFeature: 3
+  prerequisiteQuest: {fileID: 0}
+  isAccepted: 0
+  isCompleted: 1
+  rewardMoney: 0
