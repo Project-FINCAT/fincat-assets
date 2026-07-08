@@ -47,18 +47,35 @@ To eliminate schema violations during high-concurrency parsing, downstream endpo
 
 ---
 
-## 5. Configuration (Getting Started)
-To run this project locally, you must provide your own Google Gemini API key.
+## 5. Configuration & Getting Started
 
-1. **Get your API Key:** Visit [Google AI Studio](https://aistudio.google.com/) and create a new API key.
-2. **Setup Environment Variables:**
-  - Create a file named `.env` in the root directory of the `server` folder.
-   - Add your API key(s) to the file. You can provide multiple keys separated by commas for load balancing (Round-robin):
+To run this project locally, follow these steps to set up the backend and frontend.
+
+### 5.1 Backend Setup (FastAPI)
+1. **API Key Setup:**
+   - Visit [Google AI Studio](https://aistudio.google.com/) to create your API key(s).
+   - Create a `.env` file in the `server` root directory.
+   - Add your keys in the following format (keys are rotated for load balancing):
      ```text
-     GEMINI_API_KEYS=your_api_key_1,your_api_key_2,your_api_key_3
+     GEMINI_API_KEYS=your_api_key_1,your_api_key_2
      ```
-   - The system will automatically rotate through the provided keys to handle high-concurrency requests effectively.
-3. **Security Note:** Never commit your `.env` file to GitHub. This repository includes a `.gitignore` file that prevents the `.env` file from being uploaded to the server.
+2. **Installation & Execution:**
+   - Navigate to the `server` directory and install the required dependencies:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Start the local server:
+     ```bash
+     python -m uvicorn server:app --reload
+     ```
+
+### 5.2 Frontend Setup (Unity)
+1. Open the `client/game_dev` project folder in **Unity Hub** (Unity 2022.3 LTS).
+2. Navigate to the `Scenes` folder and open `Intro`.
+3. Press the **Play** button in the Unity Editor to start the simulation.
+
+> **Security Note:** Never commit your `.env` file to GitHub. Ensure your `.gitignore` is properly configured to exclude it.
+> **Note:** Ensure your local FastAPI server is running before launching the Unity game.
 
 ---
 
